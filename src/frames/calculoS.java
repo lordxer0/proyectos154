@@ -118,7 +118,7 @@ public class calculoS extends javax.swing.JFrame {
         listadoPagos.setRows(5);
         jScrollPane1.setViewportView(listadoPagos);
 
-        ingresarSalario.setText("agregar a lista");
+        ingresarSalario.setText("AGREGAR A LA LISTA");
         ingresarSalario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ingresarSalarioActionPerformed(evt);

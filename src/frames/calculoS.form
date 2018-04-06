@@ -257,7 +257,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="ingresarSalario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="agregar a lista"/>
+        <Property name="text" type="java.lang.String" value="AGREGAR A LA LISTA"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ingresarSalarioActionPerformed"/>
