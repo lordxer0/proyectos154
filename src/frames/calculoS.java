@@ -50,6 +50,7 @@ public class calculoS extends javax.swing.JFrame {
         SALIR = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         PAZ = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addContainerListener(new java.awt.event.ContainerAdapter() {
@@ -134,6 +135,8 @@ public class calculoS extends javax.swing.JFrame {
 
         jLabel9.setText(">;V v:<");
 
+        jLabel10.setText("LOS MEJORES");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -169,10 +172,14 @@ public class calculoS extends javax.swing.JFrame {
                                         .addComponent(valorHoraExtraNoc, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(trabajadorNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ingresarSalario)
-                            .addComponent(jScrollPane1)
-                            .addComponent(totalPagado))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(ingresarSalario)
+                                .addComponent(jScrollPane1)
+                                .addComponent(totalPagado))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(77, 77, 77)))))
                 .addGap(46, 46, 46))
             .addGroup(layout.createSequentialGroup()
                 .addGap(47, 47, 47)
@@ -226,7 +233,9 @@ public class calculoS extends javax.swing.JFrame {
                             .addComponent(jLabel7)
                             .addComponent(salarioTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(19, 19, 19)
-                        .addComponent(SALIR)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SALIR)
+                            .addComponent(jLabel10))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(ingresarSalario)
@@ -346,6 +355,7 @@ public class calculoS extends javax.swing.JFrame {
     private javax.swing.JTextField horasExtraNocturnas;
     private javax.swing.JButton ingresarSalario;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
