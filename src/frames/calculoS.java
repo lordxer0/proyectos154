@@ -132,7 +132,7 @@ public class calculoS extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setText(">;V");
+        jLabel9.setText(">;V v:<");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
