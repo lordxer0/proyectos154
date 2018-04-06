@@ -58,7 +58,7 @@ public class calculoS extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("calculadora de salarios");
+        jLabel1.setText("CALCULADORA SALARIO");
 
         jLabel2.setText("llene los siguientes cuadros con los datos requeridos :");
 
