@@ -48,6 +48,7 @@ public class calculoS extends javax.swing.JFrame {
         ingresarSalario = new javax.swing.JButton();
         totalPagado = new javax.swing.JTextField();
         SALIR = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addContainerListener(new java.awt.event.ContainerAdapter() {
@@ -130,6 +131,8 @@ public class calculoS extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setText(">;V");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -171,15 +174,22 @@ public class calculoS extends javax.swing.JFrame {
                             .addComponent(totalPagado))))
                 .addGap(46, 46, 46))
             .addGroup(layout.createSequentialGroup()
-                .addGap(225, 225, 225)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(112, 112, 112)
                 .addComponent(jLabel1)
                 .addContainerGap(225, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel9)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
@@ -337,6 +347,7 @@ public class calculoS extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea listadoPagos;
     private javax.swing.JTextField salarioTotal;
